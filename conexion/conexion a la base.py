@@ -1,7 +1,7 @@
 import psycopg2 as pg
 
 def row_print(rows, n):            # funcion para imprimir n filas
-    if lenght(rows) <= n:          # si el numero de filas es menor al que se desean mostrar, se imprime todas
+    if len(rows) <= n:          # si el numero de filas es menor al que se desean mostrar, se imprime todas
         for row in rows:
             print(row)
     else:                          # si no, se imprimen el numero filas que se desean

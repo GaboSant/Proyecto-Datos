@@ -9,7 +9,7 @@ CREATE TABLE Recurso(
 	nombre varchar(40)
 );
 select from Ciudad
-CREATE TABLE Tiene(
+CREATE TABLE Ciudad_Recurso(
 	codigo_municipio varchar(5) REFERENCES Ciudad ,
 	codigo_recurso varchar(2) REFERENCES Recurso,
 	primary key(codigo_municipio, codigo_recurso)

@@ -23,12 +23,12 @@ CREATE TABLE Proyecto(
 CREATE TABLE Explota(
 	codigo_proyecto varchar(2) REFERENCES Proyecto,
 	codigo_recurso varchar(2) REFERENCES Recurso,
+	codigo_ciudad varchar(5) REFERENCES Ciudad
 	año integer,
 	trimestre integer,
-	unidad_medida varchar(15),
 	tipo_contraprestacion varchar(12),
 	valor_contraprestacion numeric(15,2),
-	cantidad_producida numeric(12,0)
+	cantidad_producida numeric(12,3)
 );
 COPY CIUDAD(codigo_dane, municipio, departamento)
 FROM 'C:\Users\felip\Desktop\Universidad\3-Semestre\Ing Datos\Proyecto\Ciudad.csv' 
@@ -64,9 +64,6 @@ INSERT INTO Recurso VALUES('25','ESMERALDAS SEMIPRECIOSA');
 INSERT INTO Recurso VALUES('26','ESMERALDAS EN BRUTO');
 INSERT INTO Recurso VALUES('27','ESMERALDAS TALLADAS');
 INSERT INTO Recurso VALUES('28','MARMOL EN RAJON (RETAL DE MÁRMOL)');
-INSERT INTO Recurso VALUES('29','MARMOL EN RAJÓN (RETAL DE MÁRMOL)');
-INSERT INTO Recurso VALUES('30','MARMOL (BLOQUE MAYOR O IGUAL A 1 M3)');
-INSERT INTO Recurso VALUES('31','MARMOL (BLOQUE MENOR A 1 M3)');
 INSERT INTO Recurso VALUES('32','NIQUEL');
 INSERT INTO Recurso VALUES('33','SAL');;
 INSERT INTO Recurso VALUES('34','YESO');

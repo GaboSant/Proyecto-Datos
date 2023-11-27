@@ -181,7 +181,7 @@ app.layout = html.Div(
         html.P(style = {"fontSize": 32},
                children='''Diego: Con las gráficas del primer escenario y las de este coinciden en su lectura, comprueben
                             que tantos municipios lo explotan porque justamente es el más presente en el territorio nacional.
-                            La desventaja continua es la dificultad de notar los porcentajes más mínimos.
+                            La desventaja continua y es la dificultad de notar los porcentajes más mínimos.
                             '''),
         html.P(style = {"fontSize": 32},
                children='''Gabriel: a pesar de que el carbón es el recurso más explotado en el país, no es el que tiene más
